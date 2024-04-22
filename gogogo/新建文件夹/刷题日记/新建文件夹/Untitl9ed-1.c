@@ -1,0 +1,17 @@
+#include <stdio.h>  
+int main() {  
+    int n,i;
+    scanf("%d",&n);
+    if (n!=1)
+    {
+        for ( i=2; i<=n;i++)
+        {
+            while (n%i==0)
+            {
+                printf("%d ",i);
+                n=n/i;
+            }
+        }
+    }
+    return 0;  
+}

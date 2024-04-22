@@ -1,0 +1,18 @@
+h2{
+    color: red;   
+}
+
+h4{
+    text-align: left;
+    color: orange;
+    text-decoration: underline;
+    text-indent: 5px;
+}
+
+nav{
+    text-align: right;
+}
+
+footer{
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+h1{
+    /*文字颜色:green;
+	 文本居中对齐；
+	 文字间距为:10px;
+	 文字阴影：3px  3px  4px  gray ; */
+    color:green;
+    text-align: center;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 4px gray;
+}
+
+h4{
+    color:red;
+}
+body{
+    /* 	文字颜色:blue; 
+    	行高为1.5倍 */
+    color:blue;
+    line-height: 1.5em;
+}
+nav{
+    text-align: right;
+}
+.green_title{
+    color:green
+}
+.conpany{
+    color: #63f;
+}
+.technical{
+    color: #c3f;
+}
+#foot{
+    /* ?	行高30px;
+?	文本居中对齐； 
+?	字体大小为14px；（font-size:14px;） */
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+li.span{
+    color: grey;
+}
+li.first{
+    text-decoration: underline;
+}
+.company .technical{
+    line-height: 2;
+}
+.company{
+    list-style-image: url("../image/list_icon.gif");
+    list-style-position: inside;
+}
+.technical{
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+}

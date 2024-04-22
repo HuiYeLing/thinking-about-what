@@ -1,0 +1,201 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558 
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "type": "shell",
+          "label": "g++", //这里注意一下，见下文
+          "command": "C:\\mingw\\bin\\g++.exe",
+          "args": [
+              "-g",
+              "${file}",
+              "-o",
+              "${fileDirname}\\${fileBasenameNoExtension}.exe"
+          ],
+          "options": {
+              "cwd": "C:\\mingw\\bin"
+          },
+          "problemMatcher": [
+              "$gcc"
+          ]
+      }
+],
+"configurations": [
+    {
+        "type": "java",
+        "name": "TestEx7",
+        "request": "launch",
+        "mainClass": "TestEx7",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEx5",
+        "request": "launch",
+        "mainClass": "TestEx5",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TextEx3",
+        "request": "launch",
+        "mainClass": "TextEx3",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEX2",
+        "request": "launch",
+        "mainClass": "TestEX2",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEx1",
+        "request": "launch",
+        "mainClass": "TestEx1",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "PointDemo",
+        "request": "launch",
+        "mainClass": "PointDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo09",
+        "request": "launch",
+        "mainClass": "StringDemo09",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo08",
+        "request": "launch",
+        "mainClass": "StringDemo08",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo",
+        "request": "launch",
+        "mainClass": "StringDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "RunnerDemo",
+        "request": "launch",
+        "mainClass": "RunnerDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "InDemo",
+        "request": "launch",
+        "mainClass": "InDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "OverRideDemo",
+        "request": "launch",
+        "mainClass": "OverRideDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "FatherSonDemo",
+        "request": "launch",
+        "mainClass": "FatherSonDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "AooDemo",
+        "request": "launch",
+        "mainClass": "AooDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "CellDemo",
+        "request": "launch",
+        "mainClass": "CellDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TeacherDemo",
+        "request": "launch",
+        "mainClass": "TeacherDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StudentDemo",
+        "request": "launch",
+        "mainClass": "StudentDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo07",
+        "request": "launch",
+        "mainClass": "StringDemo07",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo05",
+        "request": "launch",
+        "mainClass": "StringDemo05",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo04",
+        "request": "launch",
+        "mainClass": "StringDemo04",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo03",
+        "request": "launch",
+        "mainClass": "StringDemo03",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo02",
+        "request": "launch",
+        "mainClass": "StringDemo02",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo01",
+        "request": "launch",
+        "mainClass": "StringDemo01",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "UPDemo",
+        "request": "launch",
+        "mainClass": "UPDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "xiaoxing",
+        "request": "launch",
+        "mainClass": "xiaoxing",
+        "projectName": "begin_b41074ca"
+    }
+]
+}

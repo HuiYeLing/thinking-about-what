@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        canvas {
+            position: absolute;
+        }
+        h1, p1 {
+            position: relative;
+            color: white;
+            z-index: 1;
+            text-align: center;
+        }
+    </style>
+	<link rel="stylesheet" type="text/css" href="../三八妇女节/css/index.css"/>
+</head>
+<body style="background-color: black;">
+    <canvas id="snow"></canvas>
+    <h1>
+        妇女节快乐 
+    </h1>
+    <hr>
+    <p1>爱你，老妈<br>明天见</p1>
+    <script>
+        var canvas = document.getElementById("snow"),
+            ctx = canvas.getContext("2d"),
+            snowflakes = [],
+            flakeCount = 400,
+            mX = -100,
+            mY = -100;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        function snow() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (var i = 0; i < flakeCount; i++) {
+                var flake = snowflakes[i],
+                    x = mX,
+                    y = mY,
+                    minDist = 150,
+                    x2 = flake.x,
+                    y2 = flake.y;
+
+                var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+                    dx = x2 - x,
+                    dy = y2 - y;
+
+                if (dist < minDist) {
+                    var force = minDist / (dist * dist),
+                        xcomp = (x - x2) * force,
+                        ycomp = (y - y2) * force,
+                        speed = flake.speed;
+
+                    flake.velX -= xcomp;
+                    flake.velY -= ycomp;
+                } else {
+                    flake.velX *= .98;
+                    if (flake.velY <= flake.speed) {
+                        flake.velY = flake.speed
+                    }
+                    flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+                }
+
+                ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+                flake.y += flake.velY;
+                flake.x += flake.velX;
+
+                if (flake.y >= canvas.height || flake.y <= 0) {
+                    reset(flake);
+                }
+
+                if (flake.x >= canvas.width || flake.x <= 0) {
+                    reset(flake);
+                }
+
+                ctx.beginPath();
+                ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            requestAnimationFrame(snow);
+        };
+
+        function reset(flake) {
+            flake.x = Math.floor(Math.random() * canvas.width);
+            flake.y = 0;
+            flake.size = (Math.random() * 3) + 2;
+            flake.speed = (Math.random() * 1) + 0.5;
+            flake.velY = flake.speed;
+            flake.velX = 0;
+            flake.opacity = (Math.random() * 0.5) + 0.3;
+        }
+
+        function init() {
+            for (var i = 0; i < flakeCount; i++) {
+                var x = Math.floor(Math.random() * canvas.width),
+                    y = Math.floor(Math.random() * canvas.height),
+                    size = (Math.random() * 3) + 2,
+                    speed = (Math.random() * 1) + 0.5,
+                    opacity = (Math.random() * 0.5) + 0.3;
+
+                snowflakes.push({
+                    speed: speed,
+                    velY: speed,
+                    velX: 0,
+                    x: x,
+                    y: y,
+                    size: size,
+                    stepSize: (Math.random()) / 30,
+                    step: 0,
+                    opacity: opacity
+                });
+            }
+
+            snow();
+        };
+
+        window.addEventListener("resize",function(){
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        })
+
+        init();
+    </script>
+</body>
+</html>

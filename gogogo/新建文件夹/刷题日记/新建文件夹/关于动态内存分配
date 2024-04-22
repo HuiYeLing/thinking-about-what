@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)//表明此参数为空，输入参数会出错，但是必有返回值，比如return 0，但是在c++中两者没有区别
+{
+    int number;
+    int *a;
+    int i;
+    printf("请输入");
+    scanf("%d",&number);
+    a=(int*)malloc(number*sizeof(int));//malloc返回结果是void *
+    //使用 malloc 函数从堆中分配 number * sizeof(int) 字节的内存
+    //int*用于强制转换
+    //用malloc处理完未分配的内存，就将a当做数组处理
+    for ( i = 0; i < number; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for ( i = number-1; i >=0 ; i--)
+    {
+       printf("%d ",a[i]);
+    }
+    free(a);//释放内存，有借有还
+}

@@ -1,0 +1,22 @@
+h2{
+	color:red;
+}
+
+/* 1)	文本左对齐；
+2)	颜色为橙色（orange）；
+3)	文本加下划线；
+4)	字间距设置为5px; */
+
+h4{
+	text-align: left;
+	color:orange;
+	text-decoration: underline;
+	letter-spacing: 5px; 
+	
+}
+nav{
+	text-align: right;
+}
+footer{
+	text-align: center;
+}

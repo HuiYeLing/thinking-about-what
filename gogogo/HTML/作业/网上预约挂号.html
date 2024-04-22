@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../作业/css/yyguahao.css"/>
+	</head>
+	<body>
+		<header>
+			<h1 class="cas">网上预约挂号</h1>
+			<p class="cass">贴心服务，让您就医更轻松</p>
+			<hr class="hrrr">
+		</header>
+		<main >
+			<form name="form1">
+			
+					<legend></legend>
+					<table align="center">
+						<tr>
+							<td>您的姓名：</td>
+							<td><input class="text-box" type="text" name="name" placeholder="须输入真实姓名" required="required"/></td>
+						</tr>
+                        <tr>
+							<td>手机号码：</td>
+							<td><input class="text-box" pattern="^\d{11,13}" type="password" name="tel" placeholder="需填写11位手机号，确保能够收到短信" /></td>
+						</tr>
+                        <tr>
+                            <td>年龄：</td>
+                            <td><input class="text-box" type="text" name="age" placeholder="需输入真实年龄" /></td>
+                        </tr>
+                        <tr>
+                            <td>就诊时间：</td>
+                            <td><input class="text-box" type="date"/></td>
+                        </tr>
+						<tr>
+							<td>就诊科室：</td>
+							<td>
+								<select class="text-box" name="clienttype">
+									<option value="1">请选择</option>
+									<option value="2">内科</option>
+									<option value="3">呼吸科</option>
+									<option value="4">口腔科</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>病情描述：</td>
+							<td><textarea class="text-box" rows="5" cols="50"></textarea></td>
+						</tr>
+						</table>
+						<p class="button">
+							<input class="tj"  type="submit" name="tj" value="提交"/>
+							<input type="reset" class="reset" name="reset" value="重填"/>
+						</p>
+				
+			</form>
+		</main>
+	</div>
+	</body>
+</html>

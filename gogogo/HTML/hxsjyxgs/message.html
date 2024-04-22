@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/newsinfo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/case.css"/>
+		<link rel="stylesheet" type="text/css" href="css/message.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="image/logo.gif"/>
+			<nav>首页| <a href="news.html">新闻中心</a>| <a href="recruit.html">诚聘英才</a> |<a href="newsinfo.html">案例展示|</a><a href="message.html">在线留言</a></nav>
+			<hr>
+		</header>
+		<main style="width: 1000px;">
+			<p class="info" >
+				尊敬的客户：如果您想了解我们的产品与服务，请留下宝贵的意见和建议，我们将给予您最快的答复。谢谢您的支持与参与！<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;售后服务邮箱：<a href="mailto:99150752@qq.com">99150752@qq.com</a>
+			</p>
+			<form name="form1">
+				<fieldset>
+					<legend>客户留言</legend>
+					<table style="width: 1000px;border: 1px solid #669 align;"center">
+						<tr>
+							<td>您的姓名：</td>
+							<td><input class="text-box" type="text" name="name" required="required"/></td>
+						</tr>
+						<tr>
+							<td>您的性别：</td>
+							<td>
+								<input type="radio" name="sex" value="0"/>男</input>
+								<input type="radio" name="sex" value="1"/>女</input>
+							</td>
+						</tr>
+						<tr>
+							<td>客户类型：</td>
+							<td>
+								<select class="text-box" name="clienttype">
+									<option value="1">代理</option>
+									<option value="2">用户</option>
+									<option value="3">公司</option>
+									<option value="4">其他</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>联系电话：</td>
+							<td><input class="text-box" pattern="^\d{11,13}" type="password" name="tel" /></td>
+						</tr>
+						<tr>
+							<td>电子邮箱：</td>
+							<td><input class="text-box" type="text" name="mail" /></td>
+						</tr>
+						<tr>
+							<td>设计调查：</td>
+							<td>
+								<input type="checkbox" name="hxsj" value="swsj"/>室内设计</input>
+								<input type="checkbox" name="hxsj" value="yys"/>景观设计</input>
+								<input type="checkbox" name="hxsj" value="sjh"/>家具定制</input>
+								<input type="checkbox" name="hxsj" value="flsj"/>其它</input>
+								（请选择您近期想要沟通的项目）
+							</td>
+						</tr>
+						<tr>
+							<td>留言标题：</td>
+							<td><input class="text-box" type="text" name="title" required="required"/></td>
+						</tr>
+						<tr>
+							<td>留言内容：</td>
+							<td><textarea class="text-box" rows="5" cols="50"></textarea></td>
+						</tr>
+						<tr>
+							<td>附件：</td>
+							<td><input class="text-box" type="file" name="file1"/></td>
+						</tr>
+					</table>
+						<p class="button">
+							<input class="tj"  type="submit" name="tj" value="提交"/>
+							<input type="reset" class="reset" name="reset" value="重填"/>
+						</p>
+
+					
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<hr color="ddd" />
+		<p class="imgcenter">	<a href="image/map.doc" >我的位置</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:411027454@qq.com">Email站长信箱</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关于我们</a></p>
+			<p id="foot" >copyright2012-2018 华响设计有限公司版权所有　　粤ICP备10026687号</p>
+		</footer>
+	</body>
+</html>
