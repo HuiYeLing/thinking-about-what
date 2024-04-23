@@ -1,5 +1,4 @@
 .header {
-    background-color: yellow;
     width: 100%;
 }
 
@@ -7,21 +6,31 @@
     width: 1100px;
     height: 88px;
     margin: auto;
-    background-color: #3f9;
-    text-align: center;
+    text-align:right;
+    background-image: url(../image/logo.gif) no-repeat;
 }
- 
+.nav a{
+    display:  inline-block;
+    line-height: 88px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.nav a:hover{
+    background-image: url(../image/navbg.gif);
+}
 .banner {
     width: 100%;
     height: 336px;
-    background-color: #ccccff;
+    background:url(../image/banner.jpg) 100%;
     text-align: center;
 }
 
 .main {
     width: 1100px;
     height: 450px;
-    /* align-items: center; */
+
     margin: auto;
     background-color: orange;
 }
@@ -35,7 +44,8 @@
 
 .container { 
     /* background-color: #f0f0f0;  */
-    background-color: gray;
+    /*background-color: gray*/
+    background: url(../image/logo.gif) no-repeat;
 }
 /* id */
 #main_left {
@@ -76,5 +86,25 @@
     height: 140px; 
     background-color: white; 
     float: left;
-    margin-right: 5px;
+}
+footer{
+    background-color: black;
+    color:#eee
+
+}
+#foot{
+    margin: auto;
+    width: 1100px;
+    line-height: 40px;
+    overflow: hidden;
+}
+#foot_left{
+    float: left;
+}
+#foot_right{
+    float: right;
+}
+#foot a{
+    color: #eee;
+    text-decoration: none;
 }
