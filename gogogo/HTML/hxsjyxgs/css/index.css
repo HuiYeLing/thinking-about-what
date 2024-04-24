@@ -1,7 +1,13 @@
 .header {
-    width: 100%;
+    margin-bottom: 10px;
 }
-
+a.img{
+    border: none;
+}
+body,ul,li,ol,form,h3,input,p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
 .nav {
     width: 1100px;
     height: 88px;
@@ -13,47 +19,42 @@
     display:  inline-block;
     line-height: 88px;
     text-decoration: none;
-    color: #333;
+    color: #000000;
     margin: 0 5px;
     padding: 0 5px;
 }
 .nav a:hover{
     background-image: url(../image/navbg.gif);
+    color: darkblue;
 }
 .banner {
     width: 100%;
     height: 336px;
     background:url(../image/banner.jpg) 100%;
-    text-align: center;
 }
 
 .main {
     width: 1100px;
-    height: 450px;
-
-    margin: auto;
-    background-color: orange;
+    overflow: hidden;
+    margin: 5 auto;
 }
 
 .footer {
     width: 100%;
     height: 40px;
     background-color: #ff6;
-    text-align: center;
 }
 
 .container { 
-    /* background-color: #f0f0f0;  */
-    /*background-color: gray*/
+    background-color: gray;
     background: url(../image/logo.gif) no-repeat;
 }
-/* id */
+
 #main_left {
     width: 280px;
-    height: 450px; 
-    background-color: #668cff; 
-    text-align: center;
+    background-color: white; 
     float: left;
+    margin-right: 10px;
 }
 
 #main_right {
@@ -67,7 +68,7 @@
 .news {
     width: 500px;
     height:300px;
-    background-color: white;
+    background-color:gray;
     float: left;
     margin-bottom: 5px;
 }
@@ -88,7 +89,7 @@
     float: left;
 }
 footer{
-    background-color: black;
+    background-color:black;
     color:#eee
 
 }
@@ -108,3 +109,52 @@ footer{
     color: #eee;
     text-decoration: none;
 }
+#main_left li{
+    line-height: 47px;
+    text-indent: 20px;
+    position: relative;
+}
+#main_left>li:nth-child(2n+1)
+{
+    background-color: #eee;
+}
+#main-left>li:first-child()
+{
+    background-color: #24a0a9;
+    font-size: 16px;
+    color: #fff;
+}
+#main-left a{
+    color: #333;
+    text-decoration: none;
+}
+#main-left a:hover{
+    position: relative;
+    bottom: 2apx;
+}
+#main_left span{
+    position: absolute;
+    left: 80%;
+    font-size: 16px;
+    font-family: 黑体;
+}
+#main_left li ol{
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    left: 99%;
+    top: 0;
+    background-color: #2bbcc6;
+    opacity: 0.9;
+}
+#main_left li:hover ol{
+    visibility: visible;
+    z-index: 10px;
+}
+#main_left ol li a:link,#main_left ol li a:visited,#main_left ol li a:hover,
+#main_left ol li a:active{color:white}
+#main_left ol li a:hover{
+    background-color:gray;
+    color: white;
+}
+#main_left ol li:hover a:link,#main_left ol li:hover a:hover{color: white;}

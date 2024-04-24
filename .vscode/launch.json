@@ -24,6 +24,20 @@
 "configurations": [
     {
         "type": "java",
+        "name": "test01",
+        "request": "launch",
+        "mainClass": "test01",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "Main",
+        "request": "launch",
+        "mainClass": "Main",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "TestEx7",
         "request": "launch",
         "mainClass": "TestEx7",
