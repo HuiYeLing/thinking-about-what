@@ -24,6 +24,48 @@
 "configurations": [
     {
         "type": "java",
+        "name": "TextEx8",
+        "request": "launch",
+        "mainClass": "TextEx8",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEx6",
+        "request": "launch",
+        "mainClass": "TestEx6",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEx4",
+        "request": "launch",
+        "mainClass": "TestEx4",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEx3",
+        "request": "launch",
+        "mainClass": "TestEx3",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TestEx2",
+        "request": "launch",
+        "mainClass": "TestEx2",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "StringDemo06",
+        "request": "launch",
+        "mainClass": "StringDemo06",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "test01",
         "request": "launch",
         "mainClass": "test01",

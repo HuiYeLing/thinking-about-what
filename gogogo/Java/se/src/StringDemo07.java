@@ -9,11 +9,11 @@ public class StringDemo07 {
         //
 
         Scanner scan=new Scanner(System.in);
-        System.out.println("请输入邮箱：");
         //获取邮箱
         String mailregex="\\w+@\\w+(\\.\\w+)+";
         //获取密码
-        String pwdregex="[A-Z]+[1]\\w{8}\\w+";
+        
+        String pwdregex="[A-Z]+\\w+";
         boolean mailflag=true;
         while (mailflag) {
             System.out.println("请输入邮箱：");
@@ -29,7 +29,7 @@ public class StringDemo07 {
         }
         boolean pwdflag=true;
         while (pwdflag) {
-            System.out.println("请输入密码：");
+            System.out.println("请输入密码（请输入一位大写字母和任意数量的数字或者字母）：");
             String pwd=scan.next().trim();
             if(pwd.matches(pwdregex))
             {

@@ -1,4 +1,4 @@
-public class TextEx3{
+public class TestEx3{
     public static void main(String[] args) { 
         //包括可能会报错的代码
         try{
