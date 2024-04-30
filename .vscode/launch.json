@@ -24,6 +24,48 @@
 "configurations": [
     {
         "type": "java",
+        "name": "Demo",
+        "request": "launch",
+        "mainClass": "Demo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "JumpRopeDemo",
+        "request": "launch",
+        "mainClass": "JumpRopeDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ValueDemo",
+        "request": "launch",
+        "mainClass": "ValueDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "test2",
+        "request": "launch",
+        "mainClass": "test2",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "EqualsDemo",
+        "request": "launch",
+        "mainClass": "EqualsDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "test",
+        "request": "launch",
+        "mainClass": "test",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "TextEx8",
         "request": "launch",
         "mainClass": "TextEx8",

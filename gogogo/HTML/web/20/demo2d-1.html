@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    ul,li{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    ul{
+        width: 920px;
+        margin: auto;
+    }
+    li{
+        border: 10px solid #ccccff;
+        float: left;
+        height: 400px;
+        overflow: hidden;
+        margin: 4px;
+        width: 200px;
+        position: relative;
+    }
+    img{
+        transition: all 0.5s;
+    }
+    li:hover img{
+        transform: translateY(-50px);
+    }
+    li span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 96px;
+        color:white;
+        transform: translate(-50%,-50%) scale(0.0) rotate(0deg);
+        font-family: 华文新魏;
+        transition: all 1s;
+    }
+    li:hover span{
+        transform: translate(-50%,-50%) scale(1.1) rotate(360deg);
+    }
+    </style> 
+</head>
+<body>
+        <ul>
+            <li><img src="../19/img/p1.jpg"><span>春</span></li>
+            <li><img src="../19/img/p2.jpg"><span>春</span></li>
+            <li><img src="../19/img/p3.jpg"><span>春</span></li>
+            <li><img src="../19/img/p4.jpg"><span>春</span></li>
+        </ul>
+</body>
+</html>

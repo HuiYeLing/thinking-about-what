@@ -39,7 +39,7 @@ ul,li,ol{list-style: none;}
 .main {
     width: 1100px;
     overflow: hidden;
-    margin: 5 auto;
+    margin: 5px auto;
 }
 
 .footer {
@@ -73,24 +73,58 @@ ul,li,ol{list-style: none;}
     margin:0px 0px 5px 0px ;
     padding: 5px 10px 8px;
 }
-#news h3 {font-size: 18px;color: #24a0a9;margin: 5px 0px;}
+#news h3 {color: #24a0a9;margin: 5px 0px; font-size: 18px;}
 #news li{position: relative;line-height: 32px;}
 #news li span{position: absolute;right: 10px;}
-#news li a{background:url(../image/newsicon2.gif) no-repeat left center;text-decoration: none;display: block;text-indent: 30px;}
+#news  a{background:url(../image/newsicon2.gif) no-repeat left center;text-decoration: none;display: block;text-indent: 30px;}
 #news a:hover{background:url(../image/newsicon.gif) no-repeat left center;}
 .search {
-    width: 500px;
-    background-color: white;
+    width: 270px;
     float: left;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin: 0px 0px 5px 10px;
 }
-
+#search form{
+    background: #fff;margin-bottom: 10px;padding: 5px 15px;
+}
 .caseshow {
     width: 800px;
     height: 140px; 
     background-color: white; 
     float: left;
+}
+#search h3{background: url(../image/search.gif) no-repeat;line-height: 40px;padding-left: 50px;padding-left: 50px;color: #24a0a9;font-weight: normal;font-size: 18px;}
+#search .text{border: 1px solid #ccc;height: 25px;margin-bottom: 5px;}
+#search .submitbutton{background: orange;color: #fff;border: none;padding: 5px 15px;margin: 5px 43px 20px;}
+#proshow{
+    width: 760px;
+    background-color: white;
+    float: left;
+    padding-bottom: 25px;
+    margin: 5px 0px;
+}
+#proshow h3{
+    background: url(../image/proshow.gif) no-repeat;
+    line-height: 40px;
+    padding-left: 50px;
+    color: #24a0a9;
+    font-weight: normal;
+    font-size: 18px;
+}
+#proshow h3
+{
+    position: relative;
+}
+#proshow h3 a{
+    position: absolute;
+    right: 5%;
+    text-decoration: none;
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+#proshow img{
+    margin: 5px;
+    width: 110px;
 }
 footer{
     background-color:black;
