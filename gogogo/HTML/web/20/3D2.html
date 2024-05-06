@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .con{width: 400px;height: 400px;border: 1px dashed #55f;margin:300px auto;transform-style: preserve-3d;
+        transform-origin:50% 50% -200px ;animation: rotate 4s infinite;}
+        .side{position: absolute;width: 400px;height: 400px;font-size: 48px;text-align: center;line-height: 400px;opacity: 0.5;}
+
+        .right{background-color: #FF0000;transform-origin: left center ;transform: translateX(400px) rotateY(90deg);}
+        .left{background-color: #aaaaff;transform-origin: right center;transform: rotateX(-400px) rotateY(-90deg);}
+        .bottom{background-color: #55ff00;transform-origin:  center top;transform: rotateY(400px) rotateX(-90deg);}
+        .top{background-color: #00aaff;transform-origin: center bottom;transform: rotateY(-400px) rotateX(90deg);}
+        .back{background-color: #AA007f;transform: translateZ(-400px) rotateY(180deg);}
+        .box{perspective: 1000px;}
+        @keyframes rotate{
+            0%{transform: rotateX(0) rotateY(0);}
+            50%{transform: rotateX(0) rotateY(360deg);}
+            100%{transform: rotateX(360deg) rotateY(360deg);}
+        }
+        </style>
+</head>
+<body>
+    <section class="box">
+        <div class="con">
+            <div class="side before">前</div>
+            <div class="side back">后</div>
+            <div class="side top">上</div>
+            <div class="side bottom">下</div>
+            <div class="side left">左</div>
+            <div class="side right">右</div>
+            </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: hk;
+            src: url(img/hkhb.ttf);
+        }
+        h1{
+            text-align: center;
+            color: orange;
+            font-family: hk;
+            animation: tada 1s .2s ease both;
+        }
+        div{
+            width: 350px;
+            height: 230px;
+            margin: 50px auto;
+            position: relative;
+            perspective: 1000px;
+        }
+        img{
+            position: absolute;
+            border: 10px ridge #E38B29;
+            transition: all 3s;
+
+        }
+        .before{
+            backface-visibility: hidden;
+        }
+        .back{
+            transform: rotateY(180deg);
+        }
+        div:hover .before{
+            transform: rotateY(180deg);
+        }
+        div:hover .back{
+            transform: rotateY(360deg);
+        }
+        @keyframes tada{
+            0%{
+                transform: scale(1);
+            }
+            10%,20%{
+                transform: scale(0.9)
+                rotate(-3deg);
+            }
+            30%,50%,70%,90%{
+                transform: scale(1.1)
+                rotate(3deg);
+            }
+            40%,60%,80%{
+            transform: scale(1.1)
+            rotate(-3deg);
+            }
+            100%{
+                transform: scale(1)
+                rotate(0);
+            }
+        }
+        </style>
+</head>
+<body>
+    <h1>没有一个冬天不可逾越</h1>
+    <h1>没有一个春天不会到来</h1>
+    <div>
+        <img src="../image/spring.jpg" class="back">
+        <img src="../image/winter.jpg" class="before">
+    </div>
+</body>
+</html>

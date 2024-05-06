@@ -3,6 +3,7 @@
     private String color;
 
     public Book() {
+        super();
     }
 
     public Book(String size, String color) {

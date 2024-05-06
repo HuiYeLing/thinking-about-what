@@ -59,7 +59,7 @@ class JumpRope extends Rope {
 
 public class JumpRopeDemo {
     public static void main(String[] args) {
-        JumpRope  jumpRope = new JumpRope("绳子", "3m", "黑色"); 
+        JumpRope  jumpRope = new JumpRope("绳子", "1.5m", "黑色"); 
         jumpRope.showInfo();
     }
     

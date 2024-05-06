@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .demo_box{
+            position: relative;
+            width: 100px;
+            height: 500px;
+            background: #4d6ea6;
+            margin: 100px auto;
+            animation: demo_box 40s infinite linear;
+        }
+        .demo_box:hover{
+            animation-play-state: paused;
+        }
+        section{
+            perspective-origin: right top;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+        @keyframes demo_box{
+            0%{
+                transform: rotateX(0deg);
+            }
+            100%{
+                transform: rotateX(360deg);
+            }
+        }
+        </style>
+</head>
+<body>
+    <section>
+        <div class="demo_box">默认的透视原点%</div>
+        </section>
+</body>
+</html>
