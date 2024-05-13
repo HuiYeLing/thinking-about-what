@@ -1,87 +1,98 @@
 h1{
-    /*������ɫ:green;
-	 �ı����ж��룻
-	 ���ּ��Ϊ:10px;
-	 ������Ӱ��3px  3px  4px  gray ; */
-    color:green;
-    text-align: center;
-    letter-spacing: 10px;
-    text-shadow: 3px 3px 4px gray;
+	/* 文字颜色:green;
+	文本居中对齐；
+	文字间距为:10px;
+	文字阴影：3px  3px  4px  gray ; */
+	color:green;
+	text-align: center;
+	letter-spacing: 10px;
+	text-shadow: 3px 3px 4px gray;
+	
 }
-
+/* 字体类型:"黑体";字体大小:20px; */
 h4{
-    color:red;
-        font-family: ����;
-        font-size: 20px;
+	color:red;
+	font-family: 黑体;
+	font-size:20px;
 }
 body{
-    /* 	������ɫ:blue; 
-    	�и�Ϊ1.5�� */
-    color:blue;
-    line-height: 1.5em;
+	/* 文字颜色:blue; 
+	行高为1.5倍; */
+	color:blue;
+	line-height:1.5 ;	
 }
 a{
-    margin-left: 10px;
-    margin-right: 10px;
+	margin-left: 10px;
+	margin-right:10px;
 }
 nav{
-    text-align: right;
+	text-align: right;
+	letter-spacing:3px;
 }
 .green_title{
-    color:green
+	color:green;
+	text-align: center;
 }
-.conpany{
-    color: #63f;
-}
-.technical{
-    color: #c3f;
-}
+ 
 #foot{
-    /* ?	�и�30px;
-?	�ı����ж��룻 
-?	�����СΪ14px����font-size:14px;�� */
-    line-height: 30px;
-    text-align: center;
-    font-size: 14px;
+	/* 行高30px;
+	文本居中对齐； 
+	字体大小为14px；（font-size:14px;） */
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
 }
-li.span{
-    color: grey;
-}
-li.first{
-    text-decoration: underline;
-}
-.company .technical{
-    line-height: 2;
-}
-.company{
-    list-style-image: url("../image/list_icon.gif");
-    list-style-position: inside;
-}
-.technical{
-    list-style-type: upper-alpha;
-    list-style-position: inside;
-}
-.green_title
-{
-    text-align: center;
-    color: green;
-}
-nav a:active{
-    color :green;
-    text-decoration: none;
-    font-style: italic;
-}
-hr{
-    border:0px;
-    border-bottom:3px #24a0a9 double;
-}
-h3{
-    text-align: center;
-    font-size:30px;
-    font-family: myfont;
-    color:#24a0a9
-
-}
-img{
-    borde:15px #24a0a9 ridge;
-}
+ .imgcenter{
+	 text-align: center;
+ }
+ /* a)超链接默认样式：颜色:#309; 字体加粗; 无下划线;
+ b)已访问链接的样式：颜色:#666; 字体加粗; 无下划线;
+ c)鼠标经过链接时的样式：颜色:#F60;无下划线; 字体为斜体；
+ d)按下时的链接样式：颜色:#green;无下划线; 字体为斜体； */
+ nav a:link{
+	 color:#309;
+	 font-weight: bold;
+	 text-decoration: none;
+ }
+ nav a:visited{
+	 color:#666;
+	 font-weight: bold;
+	 text-decoration: none;
+ }
+ nav a:hover{
+	 color:#F60;
+	 text-decoration: none;
+	 font-style: italic;
+ }
+ nav a:active{
+	 color:green;
+	 text-decoration: none;
+	 font-style: italic;
+ }
+ /* 页面两条水平线：边框为:0;底部边框为：3px  #24a0a9  双实线 */
+ hr{
+	 border: 0px;
+	 border-bottom: 3px #24a0a9 double;
+ }
+ /* 4.H3标题：文本对齐方式:center;字体大小:30px; 
+ 字体类型为下发的素材中的“方正润扁宋简体”; 颜色: #24a0a9； */
+ @font-face {
+ 	font-family:myfont;				
+ 	src: url(../ttf/hkhbt.ttf);   /* 指定字体 */
+ }
+ h3{
+	 text-align: center;
+	 font-size:30px;
+	 font-family: myfont;
+	 color:#24a0a9;
+ }
+ /* 6.图片所在段落：文字对齐方式:center;为图片添加边框，
+ 边框宽度为15px 颜色为#24a0a9，类型为：ridge(边框成脊形) */
+ p img{
+	 border:15px #24a0a9 ridge;
+ }
+ /* 7.两个文字段落：首行缩进:2em; 字体大小:16px; 
+ 行高:1.5em;为部分文字设置颜色为红色，并添加下划线。 */ 
+ .xq{
+	 
+ }

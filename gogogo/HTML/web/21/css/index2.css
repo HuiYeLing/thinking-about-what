@@ -1,0 +1,51 @@
+header{width: 1200px;height: 100px;margin: auto; background-color:white;text-align: center;}
+header section{margin: 20px auto; overflow: hidden;}
+.logo{background-image: url(../img/logo.png) no-repeat; padding-left: 84px;float: left;}
+@font-face{font-family: logofont;src:"../img/fzybsjt.ttf";}
+.logo p:first-child{font-family: logofont;font-size: 24px;color:#006E85;line-height:24px;padding-top:21px;}
+.logo p:last-child{font-size:12px;line-height: 12px; padding-bottom: 21px;}
+header form{padding-top: 15px;float:right;color:#006E85;font-family: 黑体;font-size:18px;letter-spacing:3px ;}
+header form input:first-of-type{border:1px solid #006E85;padding: 5px 10px; margin: 15px 0px;}
+header form input:last-of-type{border:none;border-radius: 5px; padding: 5px 10px;
+background: #006E85;color:yellow;font-weight: bold;}
+nav{background-color: #006E85;line-height: 50px; text-align: center;color: white;}
+ul.menu{width: 1200px; margin: auto;}
+ul.menu li{display: inline-block;line-height: 50px;width: 120px;text-align: center;position: relative;}
+ul.menu li a{color: white;font-weight: bold;}
+ul.menu li:hover{background-color: #03AACE;border-radius: 10px;}
+ul.menu>li:first-child{background-color: #03AACE;border-radius: 10px;}
+ul.menu li ol{position: absolute; background-color: #006E85;height: 0px;transition: all 0.5s;overflow: hidden;}
+
+main{width: 1200px;margin: auto;}
+.banner{ background-image:url(../img/banner_1200.jpg); 
+background-position: center center;background-repeat: no-repeat;
+background-size: 100%;padding-top: 32%; 
+}
+h1{text-align: center;}
+.case{height: 300px;background-color: #ccc;}
+.about{text-align: center;}
+.about .top p{width: 590px;}
+.about .top p:first-child{ background-color: #006E85;height: 300px;float: left;}
+.about .top p:last-child{ background-color: #03AACE;height: 300px;float: right;}
+.about .bottom{background-color: #ccc;height: 200px; margin-top:10px ;clear: both;}
+#footer{background-color: #006E85; text-align: center;}
+@media(max-width:1200px) and (min-width:960px){
+	header{width:960px ;}
+	main{width: 960px;}
+	.banner{background-image: url(../img/banner_960.jpg);}
+	.about .top p{width: 470px;}
+}
+@media(max-width:960px) and(min-width:600px){
+	header{width: 100%;}
+	main{width: 100%};
+	.banner{background-image: url(../img/banner_960.jpg);}
+	.about .top p{width: 48%;}
+}
+@media(max-width:600px){
+	header{width: 100%;}
+	main{width: 100%;max-width: 600px;}
+	.about .top p{float: none; width: 100%;}
+	.about .bottom{display: none;}
+	.banner{background-image: url(../img/banner_480.jpg);}
+	
+}

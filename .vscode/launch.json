@@ -24,6 +24,41 @@
 "configurations": [
     {
         "type": "java",
+        "name": "Cusomter",
+        "request": "launch",
+        "mainClass": "Cusomter",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "Cus",
+        "request": "launch",
+        "mainClass": "Cus",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "MapTest",
+        "request": "launch",
+        "mainClass": "MapTest",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "Demo1",
+        "request": "launch",
+        "mainClass": "Demo1",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ListTest",
+        "request": "launch",
+        "mainClass": "ListTest",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "Demo",
         "request": "launch",
         "mainClass": "Demo",

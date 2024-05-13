@@ -1,4 +1,4 @@
-interface SAS {
+interface SAS { //接口
     void start();
     void stop();
 }

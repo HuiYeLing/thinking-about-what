@@ -1,36 +1,38 @@
 #showinfo{
-    width: 1000px;
-    margin: auto;
-    border:10px solid #999;
-    line-height: 40px;
-    text-indent: 2em;
-    padding: 30px;
-    border-radius: 10px 30px;
-    background-color: rgba(255,220,255,0.5);
-    background-image: url(../????/sign.png);
-    background-repeat: no-repeat;
-    background-position: right top;
+		width:1000px;
+		margin: auto;
+		border:10px solid #999;
+		line-height: 40px;
+		text-indent: 2em;
+		padding: 30px;
+		border-radius:10px 30px;
+		background-color: rgba(255,220,255,0.5);
+		background-image: url(../image/sign.png);
+		background-repeat: no-repeat;
+		background-position: right top; 
+		/* background-size:10%;
+		background-origin:content-box;
+		box-sizing: border-box; */
 }
 #photo{
-    width: 1060px;
-    margin: auto;
-    text-align: center;
+	width: 1060px;
+	margin: auto;
+	text-align: center;
 }
 #photo p{
-    border:5px solid gray;
-    text-align: left;
-    padding:20px;
-    text-indent: 20em;
+	border: 5px solid gray;
+	text-align: left;
+	padding: 20px;
+	text-indent: 2em;
 }
-#photo .one{
-    background-color: rgba(153,51,255,0.3);
-    background-clip: content-box;
-}
+#photo .one{	
+	background-color: rgba(153,51,255,0.3);
+	background-clip: content-box;
+	}
 #photo .two{
-    background-image: linear-gradient(to right,rgba(255,0,102,0.2),rgba(255,0,255,0.8));
-    box-shadow: 3px 3px 5px gray;
+	background-image:linear-gradient(to right,rgba(255,0,102,0.2),rgba(255,0,255,0.8)) ;
+	box-shadow: 3px 3px 5px gray;
 }
 #photo .three{
-    background-image: radial-gradient(rgba(153,51,255,0.3),rgba(153,204,255,0.8));
-
+	background-image:radial-gradient( rgba(153,51,255,0.3),rgba(153,204,255,0.8));
 }

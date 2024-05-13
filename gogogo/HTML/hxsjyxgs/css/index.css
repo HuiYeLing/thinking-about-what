@@ -1,198 +1,159 @@
-.header {
-    background-color: white;
-    width: 100%;
-    background:url(../image/logo.gif) no-repeat;
-}
-a.img{
-    border: none;
-}
-body,ul,li,ol,form,h3,input,p{
-    margin: 0px;
-    padding: 0px;
-}
-body{background: #ccc;font-family: "微软雅黑";font-size: 14px;}
+body{background: #ccc;font-family: "微软雅黑";font-size:14px;}
+body,ul,li,ol,form,h3,input,p{margin: 0px;padding: 0px;}
+/* 去掉列表项的黑点 */
 ul,li,ol{list-style: none;}
-.nav {
-    width: 1100px;
-    height: 88px;
-    margin: auto;
-    text-align:right;
-    background-image: url(../image/logo.gif) no-repeat;
+a img{border: none;}
+
+
+
+.header{
+	background-color: white;
+	width: 100%;
+}
+.nav{
+	width: 1100px;
+	height: 88px;
+	margin: auto;
+	text-align: right;	 
+	background: url(../image/logo.gif)  no-repeat;
 }
 .nav a{
-    display:  inline-block;
-    line-height: 88px;
-    text-decoration: none;
-    color: #333;
-    margin: 0 5px;
-    padding: 0 5px;
+	display: inline-block;
+	line-height: 88px;
+	text-decoration: none;
+	color:#333;
+	margin: 0 5px ;
+	padding: 0 5px;
+	
 }
 .nav a:hover{
-    background-image: url(../image/navbg.gif);
+	background-image: url("../image/navbg.gif") ;
 }
-.banner {
-    width: 100%;
-    height: 336px;
-    background:url(../image/banner.jpg) 100%;
+.banner{
+	
+	height: 336px;
+	background: url(../image/banner.jpg) 100% ;
 }
+.main{
+	width: 1100px;	
+	margin: 5px auto;
+	overflow: hidden;	 
+}
+.footer{
+	width: 100%;
+	height: 40px;
+	background-color: #ff6;
+}
+.container{
+	background-color: gray;
+}
+#main_left{
+	width: 280px;	 
+	background-color: white;
+	float: left;
+	margin-right: 10px;	 
+}
+#main_right{
+	width: 800px;
+	float: left;
+	overflow: hidden;
+}
+/* news新闻中心： 宽度：500px,高度:300px, 背景颜色：白色；(用section标签构建)
+search搜索：宽度：290px,高度:300px, 背景颜色：白色；(用section标签构建)
+caseshow */
+/* 案例展示：宽度：800px,高度:140px, 背景颜色：白色；(用section标签构建) */
 
-.main {
-    width: 1100px;
-    overflow: hidden;
-    margin: 5px auto;
+#news{
+	width:500px;	 
+	background-color: white;
+	float: left;	 
+	padding:5px 10px 8px ;
+	margin: 0px 0px 5px 0px;	
 }
+#news h3 {font-size:18px;color:#24a0a9 ;margin: 5px 0px;}
+#news li{position: relative; line-height: 32px;}
+#news li span  {position:absolute ; right:10px;}
+#news  a{background: url(../image/newsicon2.gif) no-repeat left center;
+text-decoration: none; display: block; text-indent: 30px;
+}
+#news a:hover{background: url(../image/newsicon.gif) no-repeat left center;}
 
-.footer {
-    width: 100%;
-    height: 40px;
-    background-color: #ff6;
+#search{
+	width: 270px;
+	float: left;
+	margin: 0px 0px 5px 10px;
+	 
 }
-
-.container { 
-    background-color: white;
-
-}
-
-#main_left {
-    width: 280px;
-    background-color: white; 
-    float: left;
-    margin-right: 10px;
-}
-
-#main_right {
-    width: 800px;
-    float: left;
-    overflow: hidden;
-}
-
-.news {
-    width: 500px;
-    background-color:white;
-    float: left;
-    margin:0px 0px 5px 0px ;
-    padding: 5px 10px 8px;
-}
-#news h3 {color: #24a0a9;margin: 5px 0px; font-size: 18px;}
-#news li{position: relative;line-height: 32px;}
-#news li span{position: absolute;right: 10px;}
-#news  a{background:url(../image/newsicon2.gif) no-repeat left center;text-decoration: none;display: block;text-indent: 30px;}
-#news a:hover{background:url(../image/newsicon.gif) no-repeat left center;}
-.search {
-    width: 270px;
-    float: left;
-    margin: 0px 0px 5px 10px;
-}
-#search form{
-    background: #fff;margin-bottom: 10px;padding: 5px 15px;
-}
-.caseshow {
-    width: 800px;
-    height: 140px; 
-    background-color: white; 
-    float: left;
-}
-#search h3{background: url(../image/search.gif) no-repeat;line-height: 40px;padding-left: 50px;padding-left: 50px;color: #24a0a9;font-weight: normal;font-size: 18px;}
-#search .text{border: 1px solid #ccc;height: 25px;margin-bottom: 5px;}
-#search .submitbutton{background: orange;color: #fff;border: none;padding: 5px 15px;margin: 5px 43px 20px;}
+#search form{ background: #fff; margin-bottom: 10px; padding: 5px 15px;}
+#search h3{background: url(../image/search.gif) no-repeat; line-height: 40px;
+padding-left: 50px;color: #24a0a9; font-weight: normal; font-size: 18px;}
+#search .text{border:1px solid #ccc;height: 25px;margin-bottom: 5px;}
+#search .submitbutton{background: orange; color:#fff;border: none; padding:5px 15px; margin:5px 43px 20px }
 #proshow{
-    width: 760px;
-    background-color: white;
-    float: left;
-    padding-bottom: 25px;
-    margin: 5px 0px;
+	width:760px;	 
+	background-color: white;
+	float:left;
+	padding-bottom: 25px;
+	margin: 5px 0px;
 }
-#proshow h3{
-    background: url(../image/proshow.gif) no-repeat;
-    line-height: 40px;
-    padding-left: 50px;
-    color: #24a0a9;
-    font-weight: normal;
-    font-size: 18px;
+#proshow h3{position: relative;}
+#proshow h3 a{ text-decoration: none; font-size: 14px;color: #999;font-weight: bold; 
+position: absolute;right: 5%;}
+#proshow img{padding: 5px;width: 110px;float: left;}
+#proshow ul{width: 720px;overflow: hidden;}
+#proshow ul li{width: 200%;}
+@keyframes casemarquee{
+	from{transform: translateX(0px);}
+	to{transform: translateX(-720px);}
 }
-#proshow h3
-{
-    position: relative;
-}
-#proshow h3 a{
-    position: absolute;
-    right: 5%;
-    text-decoration: none;
-    font-size: 14px;
-    color: #999;
-    font-weight: bold;
-}
-#proshow img{
-    margin: 5px;
-    width: 110px;
-}
+#proshow ul li{animation: casemarquee 10s linear infinite;}
 footer{
-    background-color:black;
-    color:#eee
-
+	background-color: black;
+	color:#eee;
+	
 }
 #foot{
-    margin: auto;
-    width: 1100px;
-    line-height: 40px;
-    overflow: hidden;
+	margin: auto;
+	width: 1100px;
+	line-height: 40px;
+	overflow: hidden;
 }
 #foot_left{
-    float: left;
+	float: left;
 }
 #foot_right{
-    float: right;
+	float:right;
 }
-#foot a{
-    color: #eee;
-    text-decoration: none;
-}
-#main_left li{
-    line-height: 47px;
-    text-indent: 20px;
-    position: relative;
-}
-#main_left>li:nth-child(2n+1)
-{
-    background-color: #eee;
-}
-#main-left>li:first-child()
-{
-    background-color: #24a0a9;
-    font-size: 16px;
-    color: #fff;
-}
-#main-left a{
-    color: #333;
-    text-decoration: none;
-}
-#main-left a:hover{
-    position: relative;
-    bottom: 2apx;
-}
-#main_left span{
-    position: absolute;
-    left: 80%;
-    font-size: 16px;
-    font-family: 黑体;
-}
-#main_left li ol{
-    visibility: hidden;
-    width: 200px;
-    position: absolute;
-    left: 99%;
-    top: 0;
-    background-color: #2bbcc6;
-    opacity: 0.9;
-}
-#main_left li:hover ol{
-    visibility: visible;
-    z-index: 10px;
-}
-#main_left ol li a:link,#main_left ol li a:visited,#main_left ol li a:hover,
-#main_left ol li a:active{color:white}
-#main_left ol li a:hover{
-    background-color:gray;
-    color: white;
-}
-#main_left ol li:hover a:link,#main_left ol li:hover a:hover{color: white;}
+#foot a{	text-decoration: none;	color:#eee;}
+#main_left li{	line-height: 47px;	text-indent: 20px;	position: relative;}
+#main_left>li:nth-child(2n+1){	background-color: #eee;}
+#main_left>li:first-child{ 	background-color: #24a0a9; font-size: 16px;color:#fff;}
+#main_left a{ color:#333;text-decoration: none;}
+#main_left a:hover{position:relative;bottom: 2px;}
+#main_left span{position: absolute;left:80%;font-size: 16px;font-family: 黑体;}
+#main_left li ol{visibility: hidden;width: 200px;position: absolute;left:99%;top:0;
+background-color:#2bbcc6 ; opacity: 0.9;}
+#main_left li:hover ol{visibility: visible;z-index: 10;}
+#main_left li ol li a:link,#main_left li ol li a:visited,#main_left li ol li a>:hover,
+#main_left li ol li a:active{color:white}
+
+#main_left li ol li:hover{background: gray;color:white}
+#main_left li ol li:hover a:link,#main_left li ol li:hover a:hover{color:white;}
+#main_left li ol li{ width: 200px;}
+#main_left li ol{ width: 0px;overflow: hidden;transition-property: width;
+transition-duration: 0.5s; transition-timing-function: ease-in;}
+#main_left li:hover ol{width: 200px;}
+.show{
+				width: 100px;height:80px;border:3px solid #ccc;
+				margin: 5px;position: relative;overflow: hidden; 
+				float:left;
+	}
+.show p{
+		width:100px;height:80px;background: rgba(0,0,0,0.5);
+		color:white;font-size: 24px;text-align: center;
+		line-height:80px;	position: absolute;	left:0px;top:100%;
+		transition: all 1s;
+	}
+.show:hover p{
+		top:0px;
+}		

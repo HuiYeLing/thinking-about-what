@@ -1,41 +1,11 @@
-#showinfo{
-    width: 80%;
-    border-collapse: collapse;
-    margin: auto;
+#show{width:80%;
+border-collapse: collapse;
+margin: auto;  /* è®©è¡¨æ ¼æ°´å¹³å±…ä¸­ */
 }
-#show td{
-    border: 1px solid #66c1e4;
-    line-height: 40px;
-    padding-left: 20px;
-}
-#show td.imagarea{
-    height: 120px;
-    text-align: center;
-}
-.imgarea img{
-    width: 200px;
-    border: 3px double gray;
-    padding: 5px;
-    margin:10px;
-    border-radius: 10%;
-    box-shadow: 3px 3px 5px #66c1e4;
-}
-.imagarea{
-    color: #309;
-    font-weight: bold;
-}
-.para{
-    background: url(../ÈÎÎñËØ²Ä/icon1.png) no-repeat 10px center;
-    padding-left: 30px;
-}
-.para span{
-    margin-left: 10px;
-}
-.imgarea1 img{
-    width: 600px;
-    border: 3px double gray;
-    padding: 5px;
-    margin:10px;
-    border-radius: 10%;
-    box-shadow: 3px 3px 5px #66c1e4;
-}
+#show td{border:1px solid #66C1E4;line-height: 40px;padding-left: 20px;}
+#show td.imgarea{ height: 120px;text-align: center;}
+.imgarea img{width: 200px;border: 3px double gray ; padding: 5px;margin:10px; border-radius: 10px;
+box-shadow: 3px 3px 5px #66C1E4;}
+.impor_title {color:#309;font-weight: bold;}
+.para { background: url(../image/icon1.png) no-repeat  10px center;padding-left: 30px; }
+.para span{margin-left: 10px;}

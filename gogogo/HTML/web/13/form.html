@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-
-    <title></title>
-</head>
-<body>
-    <form name="form1">
-        <fieldset>
-            <legend>����ѧϰ</legend>
-
-    ������ 
-    <input type="text" name="name" size="20" maxlength="20" value="����">
-    </input>
-    ���룺<input type="password" name="password"/>
-    ����������:<input type="radio" name="r_fzr" value="teacher" checked="true"
-    input="radio" name="r_fzr" value="ѧ��"/>
-    ��У��ʦ</input>
-    <input type="radio" name="r_fzr" value="student">ѧ��</input>
-    <input type="radio" name="r_fzr" value="others">��У��ʿ</input>
-    ��ѧ���:<input type="checkbox" name="hsxj" value="swsj">�����Լ�</input>
-    <input type="checkbox" name="hsxj"  value="hjsw">��Һ��</input>
-    <input type="checkbox" name="hsxj"  value="hjsw">�Լ���</input>
-    <input type="checkbox" name="hsxj"  value="hjsw">�����Լ�</input>
-    <input type="button"   name="login" value="��¼" onclick="login" />
-    <input type="subimit"  name="tj"    value="�ύ" />
-    <input type="reset"    name="reset" value="����" />
-    <input type="image"    name="imbutton" src="../6/image/logo.gif">
-    <input type="hidden"   name="id"    value="123" />
-    ��Ŀ�ĵ�<input type="file" name="file1">
-    ������:<select name="city">
-        <option value="1">����</option>
-        <option value="2">�Ϻ�</option>
-        <option value="3">����</option>
-        <option value="4">����</option>
-    </select>
-    </form>
-    </fieldset>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function  login()
+			{
+				alert("你好,欢迎您登录！")
+			}
+		</script>
+	</head>
+	<body>
+		<form name="form1">
+			<fieldset>
+				<legend>表单学习</legend>
+			
+		姓名:	
+		<input type="text" name="name" size="20" maxlength="20" value="张三">
+		</input>
+		密码：<input type="password" name="password"/>
+		负责人类型:<input type="radio" name="r_fzr" value="teacher"  >
+		本校老师</input>
+		<input type="radio" name="r_fzr" value="student" checked="true" >学生</input>
+		<input type="radio" name="r_fzr" value="other">外校人员</input>
+		化学试剂:<input type="checkbox" name="hxsj" value="swsj">生物试剂</input>
+		<input type="checkbox" name="hxsj" value="yys">移夜器</input>
+		<input type="checkbox" name="hxsj" value="sjh">试剂盒</input>
+		<input type="checkbox" name="hxsj"  value="flsj">分离试剂</input >
+		<input type="button" name="login" value="登录" onclick="login" />
+		<input type="submit" name="tj" value="提交" />
+		<input type="reset" name="reset" value="重置" />
+		<input type="image" name="imgbutton" src="../11/image/tiankong.png" 
+		width="50px" height="50px" />
+		<input type="hidden" name="id" value="123" />
+		项目文档<input type="file" name="file1" />
+		出生城市：<select name="city" >
+			<option value='1'>上海</option>
+			<option value='2'>杭州</option>
+			<option value='3'>宁波</option>
+			<option value='4'>绍兴</option>
+		</select>
+		个人简历<textarea  rows="5" cols="50"></textarea>
+		</fieldset>
+		</form>
+		
+	</body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>transition-property属性</title>
+		<style type="text/css">
+			.one{
+				
+			}
+			p{
+				width:200px;
+				height:50px;
+				transition-property: all;
+				transition-duration:5s;
+								
+			}
+			div p:nth-child(1){background:#FAB8C1;transition-timing-function: linear;}
+			div p:nth-child(2){background:#FBB7F5;transition-timing-function: ease;}
+			div p:nth-child(3){background:#BEB8FA;transition-timing-function: ease-in;}
+			div p:nth-child(4){background:#B8FAD0;transition-timing-function: ease-out;}
+			div p:nth-child(5){background:#F1F9B9;transition-timing-function: ease-in-out;}
+			
+			/*div p:nth-child(1):hover{width:800px;}
+			div p:nth-child(2):hover{width:800px;}
+			div p:nth-child(3):hover{width:800px;}
+			div p:nth-child(4):hover{width:800px;}
+			div p:nth-child(5):hover{width:800px;}*/
+			div:hover p{width:800px;}
+					
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			<p>1. linear：匀速运动</p>
+			<p>2. ease：慢速开始，然后变快，然后慢速结束</p>
+			<p>3. ease-in：慢速开始</p>
+			<p>4. ease-out：慢速结束</p>
+			<p>5. ease-in-out：以慢速开始和结束</p>
+		</div>
+	</body>
+</html>
