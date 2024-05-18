@@ -1,6 +1,6 @@
 header{width: 1200px;height: 100px;margin: auto; background-color:white;text-align: center;}
 header section{margin: 20px auto; overflow: hidden;}
-.logo{background-image: url(../img/logo.png) no-repeat; padding-left: 84px;float: left;}
+.logo{background: url(../img/logo.png) no-repeat; padding-left: 84px;float: left;}
 @font-face{font-family: logofont;src:"../img/fzybsjt.ttf";}
 .logo p:first-child{font-family: logofont;font-size: 24px;color:#006E85;line-height:24px;padding-top:21px;}
 .logo p:last-child{font-size:12px;line-height: 12px; padding-bottom: 21px;}
@@ -15,6 +15,9 @@ ul.menu li a{color: white;font-weight: bold;}
 ul.menu li:hover{background-color: #03AACE;border-radius: 10px;}
 ul.menu>li:first-child{background-color: #03AACE;border-radius: 10px;}
 ul.menu li ol{position: absolute; background-color: #006E85;height: 0px;transition: all 0.5s;overflow: hidden;}
+ul.menu li:hover ol{display: block;height: 150px;animation-iteration-count: initial;animation-direction: alternate;}
+ul.menu li:last-child:hover ol{height: 100px;}
+.open,#nav .close{text-align: center;display: none;}
 
 main{width: 1200px;margin: auto;}
 .banner{ background-image:url(../img/banner_1200.jpg); 
@@ -43,9 +46,30 @@ h1{text-align: center;}
 }
 @media(max-width:600px){
 	header{width: 100%;}
+	header form{display: none;}
+
 	main{width: 100%;max-width: 600px;}
 	.about .top p{float: none; width: 100%;}
 	.about .bottom{display: none;}
 	.banner{background-image: url(../img/banner_480.jpg);}
-	
+	#nav{display: none;}
+	.open,#nav .close
+	{
+		display: inline-block;font-size: 30px;background-color: #006E85;color: #fff;width: 60px;line-height: 60px;
+		position: absolute;top: 30px;right: 10px;
+	}
+	.open:link,.open:visited{color:white}
+	#nav:target{display: block;position: absolute;top: 0px;padding-top: 88px;width: 100%;background: none;z-index:10 ;}
+	#nav ul.menu{max-width: 600px;width: 100%;}
+	#nav ul li,#nav ul li a{display: block;background: #006E85;margin-right: 10px;width: 100%;text-align: left;border-radius: 0px;text-indent: 2em;}
+	#nav ul li a:hover{background: #03AACE;margin: 0px 5px;}
+	#nav ul li:hover ol{display: none;}
+	#nav ul{animation: fadeInRight 1s ease;opacity: 0.9;max-width: 600px;width: 100%;}
+	@keyframes fadeInRight{
+	from{opacity: 0;transform:translateX(600px)}
+		to{
+			opacity: 0.9;
+			transform: translateX(0px);
+		}
+	}
 }

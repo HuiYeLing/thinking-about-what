@@ -3,33 +3,20 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Vue 实例</title>  
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>  
+    <title>AI 对话框示例</title>  
+    <link rel="stylesheet" href="ai.css">  
 </head>  
 <body>  
+    <div class="chat-container">  
+        <div class="chat-window">  
+            <ul class="chat-messages"></ul>  
+        </div>  
+        <div class="chat-input">  
+            <input type="text" id="user-input" placeholder="输入你的消息...">  
+            <button id="send-btn">发送</button>  
+        </div>  
+    </div>  
   
-<!-- Vue 模板 -->  
-<div id="app">  
-    <h1>{{ message }}</h1>  
-    <button @click="changeMessage">更改消息</button>  
-</div>  
-  
-<!-- Vue 实例的 JavaScript 代码 -->  
-<script>  
-    var app = new Vue({  
-        el: '#app', // 指定挂载的元素  
-        data: {  
-            // 定义数据对象  
-            message: 'Hello, Vue!' // 初始消息  
-        },  
-        methods: {  
-            // 定义方法  
-            changeMessage: function() {  
-                this.message = '你好啊，召唤师'; // 更改消息  
-            }  
-        }  
-    });  
-</script>  
-  
+    <script src="script.js"></script>  
 </body>  
 </html>

@@ -24,6 +24,34 @@
 "configurations": [
     {
         "type": "java",
+        "name": "Man",
+        "request": "launch",
+        "mainClass": "Man",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "eaxm02",
+        "request": "launch",
+        "mainClass": "eaxm02",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "CollectionDemo",
+        "request": "launch",
+        "mainClass": "CollectionDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "test03",
+        "request": "launch",
+        "mainClass": "test03",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "Cusomter",
         "request": "launch",
         "mainClass": "Cusomter",

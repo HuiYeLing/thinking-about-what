@@ -1,9 +1,0 @@
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, th, td { margin:0px; padding:0px; }/*将所有用到的元素标签都去掉原有的内边距及外边距*/
-body{background:#fff;color:#333;font-size:16px; font-family:"微软雅黑","SimSun","Arial Narrow";}/*设置整个页面的公共字体样式*/
-img,a img{ border:none;}/*去掉图片的边框*/
-ol, ul,li { list-style:none; }/*去掉有序列表和无序列表的项目符号和编号*/
-table,td,tr,th{font-size:12px;}/*设置表格中的文字大小*/
-a:link,a:visited{color:#333; text-decoration:none;}
-a:hover,a:active { color: #08774d; text-decoration:none; }/*为超级链接初始化与网站配色合理的颜色，去除下代线*/
-div{overflow:hidden;}/*对盒子溢出的部分进行隐藏*/
-.clear{float:none;clear: both;}/*清除浮动*/
