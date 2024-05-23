@@ -1,16 +1,16 @@
 
-public class Person implements Comparable<Person>{
+public class Student implements Comparable<Student>{
 
     private int id;
     private String name;
     private int age;
     private String city;
 
-    public Person() {
+    public Student() {
         
     }
 
-    public Person(int id, String name, int age, String city) {
+    public Student(int id, String name, int age, String city) {
         
         this.id = id;
         this.name = name;
@@ -48,13 +48,13 @@ public class Person implements Comparable<Person>{
         this.city = city;
     }
     public String toString() {
-        return "person [id=" + id + ", name=" + this.name + ", age=" + this.age + ", city=" + this.city + "]";
+        return "student [id=" + id + ", name=" + this.name + ", age=" + this.age + ", city=" + this.city + "]";
     }
     //重写比较器接口中的方法
     @Override
-    public int compareTo(Person o) {
+    public int compareTo(Student o) {
         //方法默认是升序
-        Person in = o;
+        Student in = o;
         //根据学号 降序
         int res = this.id < in.id ? 1 : (this.id == in.id ? 0 : -1);
         //如果学号相同，按照年龄升序

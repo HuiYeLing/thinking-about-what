@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>js</title>
+       <style>
+
+       </style>
+       <script>
+              function getTitle(){
+                //获取文档标题
+                var aa=document.title;
+                alert("文档标题是："+title);
+              }
+                function getDomain(){
+                    //获取当前域名
+                    var aa=document.URL;
+                    alert(aa);
+                }
+                function changeBgColor(){
+                    //改变颜色
+                    document.body.style.background="red";
+                }
+         </script>
+   </head>
+       <body>
+            <p>获取文档标题</p><button onclick="getTitle()">try it</button>
+            <p>获取当前域名：<button onclick="getDomain()">try</button></p>
+            <p>改变颜色:<button onclick="changeBgColor()">try</button></p>
+       </body>
+</html>

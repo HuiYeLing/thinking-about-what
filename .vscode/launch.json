@@ -24,6 +24,41 @@
 "configurations": [
     {
         "type": "java",
+        "name": "OutputStreamDemo",
+        "request": "launch",
+        "mainClass": "OutputStreamDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "InputStreamDemo",
+        "request": "launch",
+        "mainClass": "InputStreamDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "demo01",
+        "request": "launch",
+        "mainClass": "demo01",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "BZL",
+        "request": "launch",
+        "mainClass": "BZL",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "intest",
+        "request": "launch",
+        "mainClass": "intest",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "Man",
         "request": "launch",
         "mainClass": "Man",

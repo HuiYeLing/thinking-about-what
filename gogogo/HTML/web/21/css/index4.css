@@ -2,7 +2,7 @@ header{width: 1200px;height: 100px;margin: auto; background-color:white;text-ali
 header section{margin: 20px auto; overflow: hidden;}
 .logo{background: url(../img/logo.png) no-repeat; padding-left:84px;float: left;}
 /* .logo{background: url(../img/logo.png) no-repeat;padding-left: 84px;float:left;} */
-@font-face{font-family: logofont;src="../img/fzybsjt.ttf"}
+@font-face{font-family: logofont;src: url("../img/fzybsjt.ttf");}
 .logo p:first-child{font-family: logofont;font-size: 24px;color:#006E85;line-height:24px;padding-top:21px;}
 .logo p:last-child{font-size:12px;line-height: 12px; padding-bottom: 21px;}
 header form{padding-top: 15px;float:right;color:#006E85;font-family: 黑体;font-size:18px;letter-spacing:3px ;}
@@ -65,8 +65,7 @@ background-position: center center;background-repeat: no-repeat;
 background-size: 100%;padding-top: 32%; 
 }
 h1{text-align: center;}
-/* .case{height: 300px;background-color: #ccc;} */
-.case {}
+/* .case {} */
 
 .case ul {
 	display: flex;
@@ -104,9 +103,6 @@ h1{text-align: center;}
 
 .about .top p:first-child{ background-color: #006E85;height: 300px;float: left;}
 .about .top p:last-child{height: 300px;float: right;}
-/* .about .bottom{background-color: #ccc;height: 200px; margin-top:10px ;clear: both;} */
-
-/* #footer{background-color: #006E85; text-align: center;} */
 .about .bottom {
 	margin-top: 10px;
 	display: flex;
@@ -129,9 +125,14 @@ h1{text-align: center;}
 	width: 260px;
 
 }
-#footer{background-color: #006E85; text-align: center;}
-/*  */
-/* #foot */
+#footer{background-color: #006E85; text-align: center;color:50px ;padding: 20px;line-height: 50px;margin-top: 30px;}
+#footer .center{width: 1200px;margin: auto;color: #fff;}
+#footer .center a{color: white;}        
+#footer .center a:hover,#footer .center a:active{
+	position: relative; bottom: 2px;
+}
+#footer img{float: right;}
+#footer p{float: left;}
 
 @media(max-width:1200px) and (min-width:960px){
 	header{width:960px ;}
@@ -172,7 +173,7 @@ h1{text-align: center;}
    #nav ul li,#nav ul li a{display: block;background: #006E85;margin-right: 10px;
    width: 100%;text-align: left; 
    border-radius: 0px;text-indent: 2em;}
-   #nav ul li a:hover{background: #03AACE;margin: 0px;5px}
+   #nav ul li a:hover{background: #03AACE;margin: 0px;}
    #nav ul li:hover ol{display: none;}
    #nav ul{animation: fadeInRight 1s ease;opacity: 0.9;max-width: 600px; width: 100%;}
    @keyframes fadeInRight{
