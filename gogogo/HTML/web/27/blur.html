@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title></title>
+
+       <!-- <script>
+        window.onload=function()
+        {
+            var phone=document.getElementById("phone");
+            var divtip=document.getElementById("tip");
+            phone=onblur=function()
+            {
+                var telval=this.value
+                
+                if(telval.length==11 && isNaN(telval)==false)
+                {
+                    divtip.innerHTML="<img src='right.png'/>"
+                }
+                else
+                {
+                    divtip.innerHTML="<img src='Wrong.png'>"
+                }
+            }
+        }
+       </script>
+        -->
+
+       <style>
+
+       </style>
+   </head>
+       <body>
+        <input type="text" id="phone" placeholder="请输入手机号"  onblur="check()"  size="20"/> 
+        <div id="tip"> </div>
+       </body>
+<script>
+       function check()
+        {
+            var phone=document.getElementById("phone");
+            var divtip=document.getElementById("tip");
+            var telval=phone.value
+
+                if(telval.length==11 && isNaN(telval)==false)
+                {
+                    divtip.innerHTML="<img src='right.png'/>"
+                }
+                else
+                
+                    divtip.innerHTML="<img src='Wrong.png'>"
+        }
+        function msg()
+        {
+            var divtip=document.getElementById("tip");
+            divtip.innerHTML="手机号长度必须为是一位，且必须是数字"
+        }
+</script>
+</html>

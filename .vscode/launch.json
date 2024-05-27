@@ -24,6 +24,27 @@
 "configurations": [
     {
         "type": "java",
+        "name": "FileCopy",
+        "request": "launch",
+        "mainClass": "FileCopy",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "test02",
+        "request": "launch",
+        "mainClass": "test02",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ArraysDemo",
+        "request": "launch",
+        "mainClass": "ArraysDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "OutputStreamDemo",
         "request": "launch",
         "mainClass": "OutputStreamDemo",

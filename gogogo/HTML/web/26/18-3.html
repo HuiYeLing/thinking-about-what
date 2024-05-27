@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title></title>
+       <script>
+            function changetext(id) 
+            {
+               id.innerHTML = "鼠标未移开";
+            }
+            function resettext(id)
+            {
+               id.innerHTML = "鼠标移开";
+            }
+        </script>
+       <style>
+
+       </style>
+   </head>
+       <body>
+        <h1 onmouseover="changetext(this)" onmouseout="resettext(this)"> 鼠标已移开</h1>
+       </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title></title>
+       <style>
+            .lock{
+                width: 120px;
+                height: 30px;
+                background-color: #f00;
+            }
+            .unlock{
+                width: 120px;
+                height: 30px;
+                background-color: blue;
+            }
+       </style>
+       
+   </head>
+       <body>
+        <button class="lock" id="btn"> 锁定</button>
+       </body>
+       <script>
+        var btn=document.getElementById("btn");
+        btn.onclick=function(){
+            if(btn.className=="lock"){
+                btn.className="unlock";
+                btn.innerHTML="解锁";
+            }else{
+                btn.className="lock";
+                btn.innerHTML="锁定";
+            }
+        }
+        btn.onlick=channgestatus;
+        </script>
+</html>
