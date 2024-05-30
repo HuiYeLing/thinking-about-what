@@ -29,8 +29,6 @@ sns.heatmap(correlation, annot=True, cmap='coolwarm')
 
 
 
-
-
 # 在图表上标注相关或不相关
 for i in range(correlation.shape[0]):
     for j in range(correlation.shape[1]):

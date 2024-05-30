@@ -24,6 +24,41 @@
 "configurations": [
     {
         "type": "java",
+        "name": "HatDemo",
+        "request": "launch",
+        "mainClass": "HatDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "EarringDemo",
+        "request": "launch",
+        "mainClass": "EarringDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "TermDemo",
+        "request": "launch",
+        "mainClass": "TermDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ScoreDemo",
+        "request": "launch",
+        "mainClass": "ScoreDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "PrimeNumberDemo",
+        "request": "launch",
+        "mainClass": "PrimeNumberDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "FileCopy",
         "request": "launch",
         "mainClass": "FileCopy",

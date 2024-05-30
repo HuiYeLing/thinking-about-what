@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title></title>
+       <style>
+
+       </style>
+   </head>
+       <body>
+        <script>
+            // var str="I LOVE js sO much"
+            // var patter=/l/
+            // console.log(str.search(patter))
+            // var str ="i love js i love js"
+            // var patter=/l/g
+            // var str="1.js\n2.js\n3.js"
+            // var patter=/js/
+            // console.log(str.match(patter))
+            // var str="i love js"
+            // console.log(str.replace("js","html"))
+            // var str="i love js js"
+            // var patter=/(js)/
+            // document.write(str.replace(patter,"<strong style='color:red'>$1</strong>"))
+            var str="哈哈哈哈js嘿嘿嘿html呵呵呵呵css软件专业"
+            var patter=/哈哈哈哈|嘿嘿嘿|呵呵呵呵|软件专业/g
+            document.write(str.replace(patter,function($0){
+                console.log($0)
+                var result=""
+                for(var i=0;i<$0.length;i++)
+                result+="*"
+            return result
+            }))
+        </script> 
+       </body>
+</html>
