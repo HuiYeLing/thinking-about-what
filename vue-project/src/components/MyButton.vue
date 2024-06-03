@@ -1,49 +1,26 @@
 <template>
-    <div class="mb-4">
-      <el-button>Default</el-button>
-      <el-button type="primary">Primary</el-button>
-      <el-button type="success">Success</el-button>
-      <el-button type="info">Info</el-button>
-      <el-button type="warning">Warning</el-button>
-      <el-button type="danger">Danger</el-button>
-    </div>
-  
-    <div class="mb-4">
-      <el-button plain>Plain</el-button>
-      <el-button type="primary" plain>Primary</el-button>
-      <el-button type="success" plain>Success</el-button>
-      <el-button type="info" plain>Info</el-button>
-      <el-button type="warning" plain>Warning</el-button>
-      <el-button type="danger" plain>Danger</el-button>
-    </div>
-  
-    <div class="mb-4">
-      <el-button round>Round</el-button>
-      <el-button type="primary" round>Primary</el-button>
-      <el-button type="success" round>Success</el-button>
-      <el-button type="info" round>Info</el-button>
-      <el-button type="warning" round>Warning</el-button>
-      <el-button type="danger" round>Danger</el-button>
-    </div>
-  
-    <div>
-      <el-button :icon="Search" circle />
-      <el-button type="primary" :icon="Edit" circle />
-      <el-button type="success" :icon="Check" circle />
-      <el-button type="info" :icon="Message" circle />
-      <el-button type="warning" :icon="Star" circle />
-      <el-button type="danger" :icon="Delete" circle />
-    </div>
-  </template>
-  
-  <script lang="ts" setup>
-  import {
-    Check,
-    Delete,
-    Edit,
-    Message,
-    Search,
-    Star,
-  } from '@element-plus/icons-vue'
-  </script>
-  
+  <div>
+    <!-- 默认按钮 -->
+    <h1>{{ msg }}</h1>
+    <el-button>默认</el-button>
+    <el-button type="primary">主要</el-button>
+    <el-button type="success">成功</el-button>
+    <el-button type="info">信息</el-button>
+    <el-button type="warning">警告</el-button>
+    <el-button type="danger">危险</el-button>
+  </div>
+</template>
+
+<script>
+import { ElButton } from 'element-plus'
+
+export default {
+  name: 'MyButton',
+  components: {
+    ElButton
+  },
+  props:{
+    msg: String
+  }
+}
+</script>
