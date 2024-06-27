@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title></title>
+       <style>
+
+       </style>
+   </head>
+   <body>
+        <!-- 成绩输入框 -->
+        <input type="text" id="qncj" />
+        <!-- 考核类型选择框 -->
+        <select id="kstype" onchange="js()">
+            <option value="1">考试</option>
+            <option value="2">考查</option>
+        </select>
+        <!-- 显示最终成绩的输入框 -->
+        最终成绩：<input type="text" id="lastcj" disabled/>
+
+    <script>
+    // 计算并显示最终成绩的函数
+    function js(){
+        // 获取考核类型选择框
+        var select = document.getElementById("kstype");
+        // 获取成绩输入框
+        var txt_qmcj = document.getElementById('qncj'); // 修正ID为qncj
+        // 获取用于显示最终成绩的输入框
+        var txt_lastcj = document.getElementById('lastcj');
+        // 获取选择框的值（考核类型）
+        var select_value = select.value;
+        // 获取并清理成绩输入框的值
+        var qmcj = txt_qmcj.value.trim(); // 修正变量名为txt_qmcj
+        // 检查成绩是否已输入
+        if(qmcj == ""){
+            alert("请输入成绩");
+            return;
+        }
+        // 检查成绩是否为数字
+        if(isNaN(qmcj)){
+            alert("请输入数字");
+            return;
+        }
+        // 检查成绩是否在0-100之间
+        if(qmcj > 100 || qmcj < 0){
+            alert("请输入0-100之间的数字");
+            return;
+        }
+        // 根据考核类型设置最终成绩
+        if(select_value == 1)
+            txt_lastcj.value = qmcj; // 考试类型直接使用输入的成绩
+        else{
+            // 考查类型根据成绩范围设置等级
+            if(qmcj >= 90)
+                txt_lastcj.value = "优秀";
+            else if(qmcj >= 70)
+                txt_lastcj.value = "良好";
+            else if(qmcj >= 60)
+                txt_lastcj.value = "及格";
+            else
+                txt_lastcj.value = "不及格";
+        }
+    }
+    </script>
+   </body>
+</html>

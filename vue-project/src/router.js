@@ -1,12 +1,12 @@
 import { createApp } from 'vue';  
-import { createRouter, createWebHistory } from 'vue-router';  
+
 import Radios from './components/Radios.vue';  
 import HelloWorld from './components/HelloWorld.vue';  
 import MyButton from './components/MyButton.vue';  
-
-  
+import router from './router';
+import App from './App.vue';
+import ViewTest from './views/VueTest.vue';
 const routes = [  
-    { path: '/', component: Home },  
     {  
         path: '/Radios',  
         name: 'Radios',  
@@ -24,14 +24,7 @@ const routes = [
     },  
 ];  
   
-const router = createRouter({  
-    history: createWebHistory(),  
-    routes, // short for `routes: routes`  
-});  
   
-export default router;  
-  
-// 在你的 main.js 或 main.ts 文件中，你应该这样使用它：  
-const app = createApp(App); // 假设你有一个 App 组件  
+const app = createApp(App); 
 app.use(router);  
 app.mount('#app');

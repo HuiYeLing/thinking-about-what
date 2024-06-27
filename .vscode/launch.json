@@ -24,6 +24,34 @@
 "configurations": [
     {
         "type": "java",
+        "name": "dafen",
+        "request": "launch",
+        "mainClass": "dafen",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "jiafa",
+        "request": "launch",
+        "mainClass": "jiafa",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "runnian",
+        "request": "launch",
+        "mainClass": "runnian",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "App",
+        "request": "launch",
+        "mainClass": "App",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "SnakeClient",
         "request": "launch",
         "mainClass": "SnakeClient",

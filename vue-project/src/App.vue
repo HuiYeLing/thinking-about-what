@@ -1,40 +1,35 @@
 <script setup>
+import { useRouter } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import MyButton from './components/MyButton.vue'
 import Radios from './components/Radios.vue';
+
+const router = useRouter()
+
+const toHelloWorld = () => {
+  router.push('/HelloWorld')
+}
+
+const toMyButton = () => {
+  router.push('/MyButton')
+}
 </script>
 
 <template>
-  
-
 
 
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
       <router-view></router-view>
-      <router-link to="/HelloWorld">HelloWorld</router-link>
-      <router-link to="/MyButton">Button</router-link>
+      <router-link to="/HelloWorld" @click="toHelloWorld">HelloWorld</router-link>
+      <router-link to="/MyButton" @click="toMyButton">Button</router-link>
       <router-link to="/Radios">Radio</router-link>
+      <router-link to="/VueTest">vue test</router-link>
        <!-- 添加的路由链接 -->
     </div>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
-
-  <div>
-    <my-button />
-  </div>
-
-    <el-radio-group v-model="selectedOption">
-      <el-radio-button label="Option 1"></el-radio-button>
-      <el-radio-button label="Option 2"></el-radio-button>
-      <el-radio-button label="Option 3"></el-radio-button>
-    </el-radio-group>
 
     
 </template>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title></title>
+       <style>
+
+       </style>
+   </head>
+       <body>
+        <input type="checkbox" name="nums" value="1">1</input>
+        <input type="checkbox" name="nums" value="2">2</input>
+        <input type="checkbox" name="nums" value="3">3</input>
+        <input type="checkbox" name="nums" value="4">4</input>
+        <input type="checkbox" name="nums" value="5">5</input>
+        <input type="checkbox" name="nums" value="6">6</input></br>
+        <button onclick="fun()"> 全选</button>
+        <script>
+            function fun(){
+                var check=document.getElementsByName("nums")
+                for(var i=0;i<check.length;i++){
+                    if(check[i].checked==true)
+                        check[i].checked=false
+                    else
+                        check[i].checked=true
+                }
+            }
+        </script>
+       </body>
+</html>

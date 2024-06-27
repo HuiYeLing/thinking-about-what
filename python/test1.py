@@ -1,47 +1,54 @@
-import pulp  # 导入 PuLP库函数,事先安装好！
-
-# 1.定义一个规划问题
-MyProbLP = pulp.LpProblem("LPProbDemo1", sense=pulp.LpMaximize)
-'''
-pulp.LpProblem 是定义问题的构造函数。
-"LPProbDemo1"是用户定义的问题名（用于输出信息）。
-参数 sense 用来指定求最小值/最大值问题，可选参数值：LpMinimize、LpMaximize 。本例 “sense=pulp.LpMaximize” 表示求目标函数的最大值。
-'''
-# 2.定义决策变量
-x1 = pulp.LpVariable('x1', lowBound=0, upBound=7, cat='Continuous')
-x2 = pulp.LpVariable('x2', lowBound=0, upBound=7, cat='Continuous')
-x3 = pulp.LpVariable('x3', lowBound=0, upBound=7, cat='Continuous')
-x4 = pulp.LpVariable('x4', lowBound=0, upBound=7, cat='Continuous')
-x5 = pulp.LpVariable('x5', lowBound=0, upBound=7, cat='Continuous')
-x6 = pulp.LpVariable('x6', lowBound=0, upBound=7, cat='Continuous')
-x7 = pulp.LpVariable('x7', lowBound=0, upBound=7, cat='Continuous')
-x8 = pulp.LpVariable('x8', lowBound=0, upBound=7, cat='Continuous')
-'''
-pulp.LpVariable 是定义决策变量的函数。
-‘x1’ 是用户定义的变量名。
-参数 lowBound、upBound 用来设定决策变量的下界、上界；可以不定义下界/上界，默认的下界/上界是负无穷/正无穷。本例中 x1,x2,x3 的取值区间为 [0,7]。
-参数 cat 用来设定变量类型，可选参数值：‘Continuous’ 表示连续变量（默认值）、’ Integer ’ 表示离散变量（用于整数规划问题）、’ Binary ’ 表示0/1变量（用于0/1规划问题）。
-'''
-# 3.设置目标函数
-MyProbLP += 2 * x1 + 3 * x2 - 5 * x3
-'''
-添加目标函数使用 “问题名 += 目标函数式” 格式。
-'''
-# 4.添加约束条件
-MyProbLP += (2 * x1 - 5 * x2 + x3 >= 10)  # 不等式约束
-MyProbLP += (x1 + 3 * x2 + x3 <= 12)  # 不等式约束
-MyProbLP += (x1 + x2 + x3 == 7)  # 等式约束
-'''
-添加约束条件使用 “问题名 += 约束条件表达式” 格式。
-约束条件可以是等式约束或不等式约束，不等式约束可以是 小于等于 或 大于等于，分别使用关键字">="、"<=“和”=="。
-'''
-# 5.求解
-MyProbLP.solve()
-print("Status:", pulp.LpStatus[MyProbLP.status])  # 输出求解状态
-for v in MyProbLP.variables():
-    print(v.name, "=", v.varValue)  # 输出每个变量的最优值
-print("F(x) = ", pulp.value(MyProbLP.objective))  # 输出最优解的目标函数值
-'''
-solve() 是求解函数。PuLP默认采用 CBC 求解器来求解优化问题，也可以调用其它的优化器来求解，如：GLPK，COIN CLP/CBC，CPLEX，和GUROBI，但需要另外安装。
-'''
-
+import numpy as np  
+  
+# 城市坐标列表  
+citys = np.array([  
+    [91.1333, 29.6502],  
+    [114.2211, 30.7736],  
+    [113.3245, 23.1505],  
+    [116.5945, 40.0799],  
+    [110.3287, 20.0567],  
+    [126.6227, 45.7082]  
+])  
+  
+# 计算两点间距离的函数  
+def calculate_distance(p1, p2):  
+    return np.sqrt(np.sum((p1 - p2) ** 2))  
+  
+# 假设所有城市之间都可以直达，不需要换乘  
+def calculate_fares_and_times(distance, taxi_speed=80, bus_speed=50):  
+    taxi_fare = 2 * distance  # 出租车价格是距离的2倍  
+    taxi_time = distance / taxi_speed  # 出租车时间  
+      
+    if distance <= 30:  
+        bus_fare = 2.5 * distance  # 豪华大巴在30公里内是距离的2.5倍  
+    elif distance <= 70:  
+        bus_fare = 1.7 * distance  # 豪华大巴在30-70公里内是距离的1.7倍  
+    else:  
+        bus_fare = 1.4 * distance  # 豪华大巴超过70公里是距离的1.4倍  
+    bus_time = distance / bus_speed  # 豪华大巴时间  
+      
+    return taxi_fare, taxi_time, bus_fare, bus_time  
+  
+# 设定评价准则：综合考虑费用、时间和方便性（这里方便性简化为不需要换乘）  
+def evaluate_trip(fares_and_times, weight_fare=1, weight_time=1, weight_convenience=1):  
+    taxi_fare, taxi_time, bus_fare, bus_time = fares_and_times  
+    # 假设方便性是一个常数，因为这里不考虑换乘  
+    convenience = 1  # 或者可以根据具体需求进行调整  
+      
+    # 计算总评分  
+    score_taxi = -weight_fare * taxi_fare - weight_time * taxi_time + weight_convenience  
+    score_bus = -weight_fare * bus_fare - weight_time * bus_time + weight_convenience  
+      
+    # 选择最高评分的交通方式  
+    if score_taxi > score_bus:  
+        return 'taxi', score_taxi  
+    else:  
+        return 'bus', score_bus  
+  
+# 遍历所有城市对并计算最优方案  
+for i in range(len(citys)):  
+    for j in range(i+1, len(citys)):  
+        distance = calculate_distance(citys[i], citys[j])  
+        fares_and_times = calculate_fares_and_times(distance)  
+        optimal_mode, optimal_score = evaluate_trip(fares_and_times)  
+        print(f"从城市{i}到城市{j}的最优方案是乘坐{optimal_mode}，评分为{optimal_score:.2f}")
