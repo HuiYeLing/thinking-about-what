@@ -1,50 +1,26 @@
-import numpy as np
 import pandas as pd
 import seaborn as sns
-#忽略警号消息
-import warnings
-import os
-warnings.filterwarnings("ignore")
-
-import matplotlib
 import matplotlib.pyplot as plt
 
-#设置中文显示
-plt.rcParams['font.sans-serif']='SimHei'
-plt.rcParams['font.size']=14
-#解决负号问题
-matplotlib.rcParams['axes.unicode_minus'] =False
+# Create the DataFrame
+data_dict = {
+ '年份': ['2000', '2005', '2010', '2015', '2020'],
+ '总人口（万人）': [613.87, 639.3, 704.07, 828.27, 1006.08],
+ 'GDP（亿元）': [720.85, 1589.41, 4440.32, 8502.6, 12142.52],
+ '社会消费品零售总额（亿元）': [332.16, 691.24, 1622.09, 3150.24, 4469.76],
+ '货物运输量（万吨）': [5910, 10991, 22947, 33932, 38838],
+ '城镇居民人均可支配收入（元）': [7529.76, 12433.9, 22813.9, 39961.1, 57971],
+ '农村居民人均可支配收入（元）': [2941, 4735, 10639.8, 23601, 34754],
+ '用电量（万度）': [221763, 923856, 1603152, 2464961, 4116782]
+}
 
-data = pd.read_excel(r'D:\study\begin\python\城市比赛\1\宁波市GDP.xls', index_col=0)
-# print(data.index)
-# data.shape
-# data.info()
-# data.isna().sum()
+df = pd.DataFrame(data_dict)
 
-# # 从第八行开始提取年份信息
-# years = data.index[7:]
-# # 将索引转换为列表（如果需要）
-# years_list = years.tolist()
-# # 打印年份列表查看
-# print(years_list)
-# # 从第八行开始提取生产总值数据
-# gdp_values = data.iloc[7:, 0]  # 使用iloc访问从第八行开始的第一列数据
-# # 将生产总值数据转换为列表
-# gdp_list = gdp_values.tolist()
-# # 打印生产总值列表查看
-# print(gdp_list)
+# Calculate the correlation matrix
+corr = df.corr()
 
-# 从第八行开始提取年份和生产总值数据
-years = data.iloc[7:, 0].tolist()  # 第一列是年份数据
-gdp_values = data.iloc[7:, 1].tolist()  # 第二列是生产总值数据
-
-# 绘制年份与生产总值的折线图
-plt.figure(figsize=(10, 6))  # 设置图形的大小
-plt.plot(years, gdp_values, marker='o', linestyle='-', color='b')  # 绘制折线图
-plt.title('年份与生产总值的关系')  # 添加标题
-plt.xlabel('年份')  # 添加x轴标签
-plt.ylabel('生产总值（亿元）')  # 添加y轴标签
-plt.xticks(rotation=45)  # 旋转x轴标签，以便更好地显示
-plt.grid(True)  # 显示网格
-plt.show()  # 显示图形
-
+# Plotting the heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
+plt.title('Pearson Correlation Matrix Heatmap')
+plt.show()

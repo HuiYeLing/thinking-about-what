@@ -24,6 +24,20 @@
 "configurations": [
     {
         "type": "java",
+        "name": "BiggerDemo",
+        "request": "launch",
+        "mainClass": "BiggerDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ArrayDemo",
+        "request": "launch",
+        "mainClass": "ArrayDemo",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "dafen",
         "request": "launch",
         "mainClass": "dafen",
