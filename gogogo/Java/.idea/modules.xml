@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Basic02/Basic02.iml" filepath="$PROJECT_DIR$/Basic02/Basic02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN02/CN02.iml" filepath="$PROJECT_DIR$/CN02/CN02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN04/CN04.iml" filepath="$PROJECT_DIR$/CN04/CN04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN05/CN05.iml" filepath="$PROJECT_DIR$/CN05/CN05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN06/CN06.iml" filepath="$PROJECT_DIR$/CN06/CN06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CN1/CN1.iml" filepath="$PROJECT_DIR$/CN1/CN1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculation/Calculation.iml" filepath="$PROJECT_DIR$/Calculation/Calculation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO01/IO01.iml" filepath="$PROJECT_DIR$/IO01/IO01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Map/Map.iml" filepath="$PROJECT_DIR$/Map/Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WangZijian/WangZijian.iml" filepath="$PROJECT_DIR$/WangZijian/WangZijian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gogogo.iml" filepath="$PROJECT_DIR$/gogogo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop01/oop01.iml" filepath="$PROJECT_DIR$/oop01/oop01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop02/oop02.iml" filepath="$PROJECT_DIR$/oop02/oop02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop03/oop03.iml" filepath="$PROJECT_DIR$/oop03/oop03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop04/oop04.iml" filepath="$PROJECT_DIR$/oop04/oop04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop06/oop06.iml" filepath="$PROJECT_DIR$/oop06/oop06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop07/oop07.iml" filepath="$PROJECT_DIR$/oop07/oop07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/se/se.iml" filepath="$PROJECT_DIR$/se/se.iml" />
+      <module fileurl="file://$PROJECT_DIR$/se03/se03.iml" filepath="$PROJECT_DIR$/se03/se03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/se04/se04.iml" filepath="$PROJECT_DIR$/se04/se04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/test1/test1.iml" filepath="$PROJECT_DIR$/work/test1/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/test2/test2.iml" filepath="$PROJECT_DIR$/work/test2/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/test3/test3.iml" filepath="$PROJECT_DIR$/work/test3/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/test4/test4.iml" filepath="$PROJECT_DIR$/work/test4/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/test5/test5.iml" filepath="$PROJECT_DIR$/work/test5/test5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/test6/test6.iml" filepath="$PROJECT_DIR$/work/test6/test6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work/work.iml" filepath="$PROJECT_DIR$/work/work.iml" />
+      <module fileurl="file://$PROJECT_DIR$/结构/结构.iml" filepath="$PROJECT_DIR$/结构/结构.iml" />
+    </modules>
+  </component>
+</project>

@@ -24,6 +24,41 @@
 "configurations": [
     {
         "type": "java",
+        "name": "Test",
+        "request": "launch",
+        "mainClass": "triangle.Test",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "Test",
+        "request": "launch",
+        "mainClass": "Test",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ArrayDivideemail",
+        "request": "launch",
+        "mainClass": "ArrayDivideemail",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "ArrayDivide",
+        "request": "launch",
+        "mainClass": "ArrayDivide",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
+        "name": "CaculationClass",
+        "request": "launch",
+        "mainClass": "CaculationClass",
+        "projectName": "begin_b41074ca"
+    },
+    {
+        "type": "java",
         "name": "BiggerDemo",
         "request": "launch",
         "mainClass": "BiggerDemo",
